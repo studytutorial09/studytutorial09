@@ -1,0 +1,123 @@
+<html lang="en">
+
+<head>
+    <title>CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the header */
+        header {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), #009688), url(cloud.jpeg);
+            background-size: cover;
+            background-position: center;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: rgb(17, 16, 16);
+        }
+
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+            float: left;
+            width: 30%;
+            height: 3787;
+            /* only for demonstration, should be removed */
+            background: #009688;
+            padding: 20px;
+        }
+
+        /* Style the list inside the menu */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: auto;
+            /* only for demonstration, should be removed */
+        }
+        article h2 {
+            color: rgb(34, 151, 151);
+        }
+        article img{
+            width: 34%;
+            height: 34%;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: bot
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="cloudimg">
+        <h2>Cloud Computing</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <h1>1. Identify the various attributes, elements and actors of cloud computing</h1><br>
+                 <li><a href="cloud.html">1. basics and technological importance of Cloud Computing</a></li>
+                 <li><a href="cloud1.html">2. various attributes, elements and actors of cloud computing</a></li><br>
+                <h1>2. EXPLAIN THE CONCEPT OF CLOUD DEPLOYMENT MODEL</h1><br>
+                 <li><a href="cloud2.html">1.Discuss concept, characteristics and challenges of public & private cloud. </a></li>
+                 <li><a href="cloud3.html">2. community & hybrid cloud</a></li><br>
+                <h1>3. INTERPRATE VARIOUS CLOUD SERVICE MODELS.</h1><br>
+                 <li><a href="cloud4.html">1. Infrastructure as a Service(IaaS) & Platform as a Service (PaaS)</a></li>
+                 <li><a href="cloud5.html">2. Software as a Service (SaaS)</a></li><br>
+                <h1>4. DISCUSS THE ROLE OF VIRTUALIZATION AND BALANCING IN CLOUD COMPUTING.</h1><br>
+                 <li><a href="cloud6.html">1.Explain the importance of virtualization in Cloud Computing.</a></li>
+                 <li><a href="cloud7.html">2.Explain load balancing and it's types. </a></li><br>
+                <h1>5. EXPLAIN THE BASIC CONCEPTS OF CLOUD SECURITY.</h1><br>
+                 <li><a href="cloud8.html">1.Identify core concepts of the network security & the security threats in
+                    Cloud Computing.</a></li>
+                 <li><a href="cloud9.html">2.List some important cloud computing driven commercial systems and
+                    applications</a></li><br>
+            </ul>
+        </nav>
+
+        <article>
+             <h1>Identify core concepts of the network security & the security threats in
+                Cloud Computing</h1>
+
+        </article>
+    </section>
+
+</body>
+
+</html>

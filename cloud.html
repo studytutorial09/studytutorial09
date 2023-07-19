@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the header */
+        header {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), #009688), url(cloud.jpeg);
+            background-size: cover;
+            background-position: center;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: rgb(17, 16, 16);
+        }
+
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+            float: left;
+            width: 30%;
+            height: 3400px;
+            /* only for demonstration, should be removed */
+            background: #009688;
+            padding: 20px;
+        }
+
+        /* Style the list inside the menu */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 3400px;
+            /* only for demonstration, should be removed */
+        }
+
+        article img {
+            width: 88%;
+            height: 11%;
+        }
+
+        .img1 {
+            width: 104%;
+            height: 7%;
+        }
+
+        article h2 {
+            color: rgb(34, 151, 151);
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: bot
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="cloudimg">
+        <h2>Cloud Computing</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <h1>1. Identify the various attributes, elements and actors of cloud computing</h1><br>
+                <li><a href="cloud.html">1. basics and technological importance of Cloud Computing</a></li>
+                <li><a href="cloud1.html">2. various attributes, elements and actors of cloud computing</a></li><br>
+                <h1>2. EXPLAIN THE CONCEPT OF CLOUD DEPLOYMENT MODEL</h1><br>
+                <li><a href="cloud2.html">1.Discuss concept, characteristics and challenges of public & private cloud.
+                    </a></li>
+                <li><a href="cloud3.html">2. community & hybrid cloud</a></li><br>
+                <h1>3. INTERPRATE VARIOUS CLOUD SERVICE MODELS.</h1><br>
+                <li><a href="cloud4.html">1. Infrastructure as a Service(IaaS) & Platform as a Service (PaaS)</a></li>
+                <li><a href="cloud5.html">2. Software as a Service (SaaS)</a></li><br>
+                <h1>4. DISCUSS THE ROLE OF VIRTUALIZATION AND BALANCING IN CLOUD COMPUTING.</h1><br>
+                <li><a href="cloud6.html">1.Explain the importance of virtualization in Cloud Computing.</a></li>
+                <li><a href="cloud7.html">2.Explain load balancing and it's types. </a></li><br>
+                <h1>5. EXPLAIN THE BASIC CONCEPTS OF CLOUD SECURITY.</h1><br>
+                <li><a href="cloud8.html">1.Identify core concepts of the network security & the security threats in
+                        Cloud Computing.</a></li>
+                <li><a href="cloud9.html">2.List some important cloud computing driven commercial systems and
+                        applications</a></li><br>
+
+            </ul>
+        </nav>
+
+        <article>
+            <h1>Basics And Technological Importance Of Cloud Computing</h1>
+            <h2>What Is Cloud Computing?</h2>
+            <p>Cloud ek badi interconnected networks of servers ka desigen ha. jese ki computer resourses ko deliver
+                karne ke liye banaya gaya ha. or esme right location ka concept nhi ha ki data esme kha se aa raha h or
+                kaha ja raha ha.<br>colud computing ek esi technology h jesme data and program ko internet per store and
+                access keya jata ha.
+                in outher words,cloud computing ek technology ha jeseke dura data and information ko internetke help se
+                store and manage and retrieve kesaya jata ha.cloud computing me inter net per host ki gayi service
+                include ha.</p>
+            <p>agerbapni lanuguage me khaha jaye to cloud computing ek esa plate form h jaha duniya bhar ki infomation
+                aviable h par kaha store h ye kesi ko nhi pata h.or ye infomation kaha share ho rahi h ye bhi nhi pata
+                h. cloud computing me bahut sare resourseshote ha.data storage,server,networking,and application etc.
+                esme data cloud me he store hota h.or ye data digital data ke form me store hota h or ye data ko bade
+                computer me store kiya jata h.jese server kaha jata ha.
+            </p>
+            <p>cloud computing ko develop karne ke liye harddisk,data base ,software application ka use kiya jata
+                h.cloud computing me service privateand public dono ho sakti h.ye serviceko three part me divite kiya
+                gaya h.1 iaaS 2 saaS 3 paaS.
+                example of cloud computing- google,amozon ,microsoftazure etc.
+            </p>
+            <img src="WhatsApp-Image-2022-07-10-at-3.38.43-PM-1-768x802.jpeg" alt="">
+            <h2>Type Of Cloud Computing</h2>
+            <p>cloud computing ko 4 type hote ha.</p>
+            <ol>
+                <li>Public cloud</li>
+                <li>Private cloud</li>
+                <li>Hybrid cloud</li>
+                <li>Community cloud</li>
+            </ol>
+            <h2>Advantange Of Cloud Computing</h2>
+            <li>cloud computing me data ko store karna and uska backup karna aasan ha</li><br>
+            <li> seme infomationko share karna aasan hata ha.</li><br>
+            <li>user internet ke help se cloud me store imformation ko access kar sakta ha.</li><br>
+            <li> cloud computingme jo software and hardware ka use kiya jata h unko manage karna easy hota ha.</li><br>
+            <li> esme user moblie se data ko access ka rskta ha.</li><br>
+            <li>cloud computing me sabhi taraha ke data ko store kiya ja skta ha .</li><br>
+            <h2>Disadvantage Of Cloud Computing</h2>
+            <li>cloud computing me acha inter net conntion nhi h to hum data or file ko accessnhi kar sakte ha.</li><br>
+            <li>esme eski service ko ek user se usre usre tak transfer karne me oranization company ko problem ka samna
+                karna padta h.</li><br>
+            <h2>Application Of Cloud Computing</h2>
+            <dt><b>1. Online Data Storage </b></dt>
+            <dd>cloud computing ka use cloud storage per file,image and video ko stora karene ke liye kiya jata ha.yaha
+                data and file ko cloudn Storage ka access provite karta ha.</dd><br>
+            <dd>eske alaba eska use organization ke dura badi matra me data ko store and access karne ke liye kiya jata
+                ha.</dd>
+            <dt><b>2. Backup and Recovery</b></dt>
+            <dd>eska use data ka backup lene ke liye kiya jata ha.esme search hue data ko dubra recover karne ke liye
+                baut se tootle hote ha. jo search hua data ko retrievekarte ha.</dd>
+            <dd>kisi search kiye hue data ko recoverkaena haed hota ha. leken cloudcomputing me esa nhi ha. esme data ko
+                recover karna easy hota ha.</dd>
+            <dt><b>3. Big Data Analysis</b></dt>
+            <dd>cloud computing ka use badi badi company ke dura store databko Analysis karne ke liye kiya jata ha. hum
+                sabhi jante ha ki badi matra me kisi data ko Analyze karna kitna muskil kam hata ha.leken cloud
+                computing ne es kam ko esay bana diya ha.</dd>
+            <dt><b>4. Testing And Development</b></dt>
+            <dd>eska use kisi application ko test and develop karne ke liye kiya jata ha.esme application ko develop
+                karna and use test karna bahuteasynha.</dd>
+            <dd>cloud computing me bahut sare tools hote ha .jenke dura kisi bhi application ko easy se develop and test
+                karna and test karna bahut he easy ha.</dd>
+            <dt><b>5. Antivirus</b></dt>
+            <dd>cloud computing ke ek type Antivirus software hota ha.jo business me mojud system per nigrani rakhta ha
+                or unhe virus se securenkarta ha.</dd>
+            <dd>jab cloud computing technology nhi thi to business ko apna computer per Antivirus software ko instoll
+                karna padta ha. leken ab esa nhi ha kyoki esme pahle se he Antivirus applicationhota ha.</dd>
+            <dt><b>6. E-Commmerce</b></dt>
+            <dd>cloud computing ka use e-commerce me kisi bhi product ke data ko online store karne ke liye kiya jata
+                ha.</dd>
+            <dd>online product buy and sell ka fayda yah bhi ha ki dellar and customer dono direct ek dusre se connet
+                kar pate ha. and customer ko khud shop me jane ki need nhi padti samne gar me pahuch jate ha.</dd>
+            <h2>computing model</h2>
+            <p>cloud computing MODELS ko spi model bhi kahte ha.enme three layer hoti ha. sabse uper li layer
+                saaS,second layer me paaS and last layer me laaSnmodel hoti ha.</p>
+            <img class="img1" src="cloud-computing-models-in-hindi.jpg.jpeg" alt="">
+            <p>cloud copmuting me some model</p>
+            <li><b>Desktop computing</b></li>
+            <dd>A desktop computer is a type of personal computer that is designed to be used on a desk or workstation.
+                It typically consists of a tower or case that houses the computer's components, including the
+                motherboard, processor, memory, and storage. A desktop computer usually has a separate keyboard, mouse,
+                and monitor, which can be connected to the computer using cables or wireless technology. Desktop
+                computers are often used for tasks that require a lot of processing power, such as video editing,
+                gaming, or running complex software programs.</dd>
+            <li><b>client server computing</b></li>
+            <dd>A client-server computer network is a system where one or more computers, called clients, request
+                services or resources from another computer, called the server. The server provides these services or
+                resources to the clients, which can be located in different geographic locations. This type of network
+                is commonly used in businesses and organizations where multiple users need access to centralized data
+                and applications. The server manages and controls access to the resources, while the clients are
+                responsible for requesting and using them.</dd>
+            <li><b>cluster computing</b></li>
+            <dd>A computer cluster is a group of connected computers that work together as a single system. The
+                computers in the cluster are typically connected by a high-speed network and share resources such as
+                storage, memory, and processing power. Clusters are used in a variety of applications, including
+                scientific research, data analysis, and high-performance computing. They are designed to provide high
+                availability, scalability, and fault tolerance, which means that if one computer in the cluster fails,
+                the others can continue to operate without interruption. Clusters can be configured in many different
+                ways, depending on the specific needs of the application.</dd>
+            <li><b>grid computing</b></li>
+            <dd>A grid computing system is a type of distributed computing system that enables sharing, selection, and
+                aggregation of geographically distributed resources, such as computing, storage, and data, to solve
+                complex problems. Grid computing systems are designed to provide access to computing resources that are
+                not available on a single computer. These resources are shared across a network of computers, which are
+                typically connected through the internet.
+                Grid computing systems are used in a variety of applications, including scientific research,
+                engineering, and financial modeling. They are designed to provide high availability, scalability, and
+                fault tolerance, which means that if one computer in the grid fails, the others can continue to operate
+                without interruption. Grid computing systems can be configured in many different ways, depending on the
+                specific needs of the application. They can also be used to create virtual organizations that share
+                resources and collaborate on common goals.</dd>
+            <h2>cloud computing architecture</h2>
+            <p>loud computing architecture typically consists of several layers, each responsible for different aspects
+                of the cloud environment.</p>
+            <h3>The layers include:</h3>
+            <p><b>1. Infrastructure as a Service (IaaS)</b>: This layer provides the basic building blocks of the cloud, such
+                as storage, processing power, and networking. IaaS is often used to create virtual machines and networks
+                that can be customized to meet specific needs.</p>
+            <p><b>2. Platform as a Service (PaaS)</b>: This layer provides a platform for developers to build and deploy
+                applications. PaaS provides a set of tools and services that allow developers to focus on building their
+                applications without worrying about the underlying infrastructure.</p>
+            <p><b>3. Software as a Service (SaaS)</b> This layer provides software applications that are delivered over the
+                internet. SaaS applications are typically accessed through a web browser or mobile app and are managed
+                by the provider.</p>
+            <p><b>4. Function as a Service (FaaS)</b>: This layer provides a serverless computing environment where developers
+                can deploy code without having to manage the underlying infrastructure. FaaS is often used for
+                event-driven applications that require quick response times.</p>
+        </article>
+    </section>
+</body>
+</html>
+
+
+
+
+

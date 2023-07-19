@@ -1,0 +1,428 @@
+<html lang="en">
+
+<head>
+    <title>CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the header */
+        header {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), #009688), url(cloud.jpeg);
+            background-size: cover;
+            background-position: center;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: rgb(17, 16, 16);
+        }
+
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+            float: left;
+            width: 30%;
+            height: 3787;
+            /* only for demonstration, should be removed */
+            background: #009688;
+            padding: 20px;
+        }
+
+        /* Style the list inside the menu */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: auto;
+            /* only for demonstration, should be removed */
+        }
+
+        article img {
+            width: 34%;
+            height: 34%;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: bot
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="cloudimg">
+        <h2>Cloud Computing</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <h1>1. Identify the various attributes, elements and actors of cloud computing</h1><br>
+                <li><a href="cloud.html">1. basics and technological importance of Cloud Computing</a></li>
+                <li><a href="cloud1.html">2. various attributes, elements and actors of cloud computing</a></li><br>
+                <h1>2. EXPLAIN THE CONCEPT OF CLOUD DEPLOYMENT MODEL</h1><br>
+                <li><a href="cloud2.html">1.Discuss concept, characteristics and challenges of public & private cloud.
+                    </a></li>
+                <li><a href="cloud3.html">2. community & hybrid cloud</a></li><br>
+                <h1>3. INTERPRATE VARIOUS CLOUD SERVICE MODELS.</h1><br>
+                <li><a href="cloud4.html">1. Infrastructure as a Service(IaaS) & Platform as a Service (PaaS)</a></li>
+                <li><a href="cloud5.html">2. Software as a Service (SaaS)</a></li><br>
+                <h1>4. DISCUSS THE ROLE OF VIRTUALIZATION AND BALANCING IN CLOUD COMPUTING.</h1><br>
+                <li><a href="cloud6.html">1.Explain the importance of virtualization in Cloud Computing.</a></li>
+                <li><a href="cloud7.html">2.Explain load balancing and it's types. </a></li><br>
+                <h1>5. EXPLAIN THE BASIC CONCEPTS OF CLOUD SECURITY.</h1><br>
+                <li><a href="cloud8.html">1.Identify core concepts of the network security & the security threats in
+                        Cloud Computing.</a></li>
+                <li><a href="cloud9.html">2.List some important cloud computing driven commercial systems and
+                        applications</a></li><br>
+            </ul>
+        </nav>
+
+        <article>
+            <h1> community & hybrid cloud</h1>
+            <h2>Community Cloud</h2>
+            <p>A community cloud is a type of cloud computing environment that is shared by a group of organizations
+                with similar interests and requirements. The community cloud allows these organizations to share
+                computing resources, software applications, and data in a secure and scalable manner. The community
+                cloud can be hosted on-premises or in a third-party data center, and can be managed by one or more of
+                the participating organizations or by a third-party provider. The community cloud can provide several
+                benefits, including cost savings, enhanced security, greater control, and improved collaboration and
+                communication among the participating organizations. However, the community cloud can also pose some
+                challenges, including the need for effective governance and management, the need for standardization and
+                interoperability, and the potential for conflicts of interest among the participating organizations. It
+                is important for organizations to carefully evaluate the benefits and risks of community clouds before
+                deciding to participate in one.</p>
+            <h2><b>Characteristics</b></h2>
+            <dd>The characteristics of community cloud include:</dd><br>
+
+            <li>1. Shared infrastructure: Community cloud infrastructure is shared among a group of organizations with
+                similar interests and requirements.</li><br>
+
+            <li>2. Shared ownership: The community cloud is owned and managed by the participating organizations, or by
+                a third-party provider.</li><br>
+
+            <li> 3. Shared responsibility: The participating organizations share responsibility for governance,
+                management, and security of the community cloud.</li><br>
+
+            <li>4. Customization: The community cloud can be customized to meet the specific needs of the participating
+                organizations.</li><br>
+
+            <li>5. Cost savings: The community cloud can provide cost savings through resource pooling and shared
+                infrastructure.</li><br>
+
+            <li>6. Enhanced security: The community cloud can provide enhanced security through shared responsibility
+                and collaboration among the participating organizations.</li><br>
+
+            <li>7. Greater control: The participating organizations have greater control over the community cloud
+                compared to public cloud services.</li><br>
+
+            <li>8. Improved collaboration and communication: The community cloud can improve collaboration and
+                communication among the participating organizations.</li><br>
+
+            <li>9. Scalability: The community cloud can be scaled up or down to meet the changing needs of the
+                participating organizations.</li><br>
+
+            <li> Flexibility: The community cloud can be customized and adapted to meet the changing needs of the
+                participating organizations.</li><br>
+
+            <p>It is important for organizations to carefully evaluate the characteristics of community cloud and
+                determine whether it is suitable for their needs before deciding to participate in one.</p>
+            <h2><b>Suitability</b></h2>
+            <dd>Community cloud is suitable for organizations that have shared interests and requirements, such as those
+                in the same industry or geographic region. It can be used for a variety of purposes, including
+                collaboration, data sharing, and resource pooling. Community cloud can provide several benefits,
+                including cost savings, enhanced security, greater control, and improved collaboration and communication
+                among the participating organizations. It is particularly useful for organizations that have limited IT
+                resources or expertise, as they can benefit from the shared resources and expertise of the community.
+                However, community cloud may not be suitable for all organizations, as it requires effective governance
+                and management, standardization and interoperability, and a high level of trust and cooperation among
+                the participating organizations. It is important for organizations to carefully evaluate the benefits
+                and risks of community cloud before deciding to participate in one.</dd><br>
+            <h2><b>On-premise Community cloud</b></h2>
+            <dd>On-premise community cloud is a type of community cloud that is hosted within the premises of one of the
+                participating organizations. In this model, the participating organizations share the cost of the
+                hardware, software, and other resources required to set up and manage the community cloud. The
+                on-premise community cloud can provide several benefits, including greater control, enhanced security,
+                and customized solutions. However, it can also pose some challenges, such as the need for specialized IT
+                expertise, high initial costs, and limited scalability. It is important for organizations to carefully
+                evaluate the benefits and risks of on-premise community cloud before deciding to adopt this model.</dd>
+            <h2><b>Issues with on-premise Community cloud</b></h2>
+            <dd>On-premise community cloud can pose several challenges, including:</dd><br>
+
+            <li>1. High initial costs: Setting up an on-premise community cloud can require significant upfront
+                investment in hardware, software, and other resources.</li><br>
+
+            <li>2. Limited scalability: On-premise community cloud may have limited scalability compared to public or
+                hybrid cloud solutions, as the participating organizations are responsible for managing and upgrading
+                the infrastructure.</li><br>
+
+            <li>3. Limited expertise: On-premise community cloud requires specialized IT expertise, which may be a
+                challenge for some organizations.</li><br>
+
+            <li>4. Security risks: On-premise community cloud can pose security risks if the participating organizations
+                do not have adequate security measures in place.</li><br>
+
+            <li>5. Maintenance and management: On-premise community cloud requires ongoing maintenance and management,
+                which can be time-consuming and resource-intensive.</li><br>
+
+            <li>6. Lack of standardization: On-premise community cloud may lack standardization and interoperability,
+                which can limit collaboration and resource sharing among the participating organizations.</li><br>
+
+            <li>7. Limited access: On-premise community cloud may have limited access to external resources and
+                services, which can limit its functionality and usefulness.</li><br>
+
+            <p>It is important for organizations to carefully evaluate these issues and determine whether on-premise
+                community cloud is suitable for their needs before deciding to adopt this model.</p><br>
+            <h2><b>Outsourced community cloud</b></h2>
+            <dd>Outsourcing community cloud involves hiring a third-party provider to set up and manage the community
+                cloud infrastructure. This model can provide several benefits, including cost savings, access to
+                specialized expertise, and improved scalability. However, outsourcing community cloud also poses some
+                challenges, such as the need to carefully evaluate and select a reliable provider, the potential for
+                security risks, and the need to establish clear governance and management policies. It is important for
+                organizations to carefully evaluate the benefits and risks of outsourcing community cloud and determine
+                whether it is suitable for their needs before deciding to adopt this model. It is also important to
+                choose a trusted third-party provider that follows privacy and security protections required by law.
+            </dd><br>
+            <h2><b>Issues with outsourced community cloud</b></h2>
+            <dd>Outsourcing community cloud can pose several challenges, including:</dd>
+            <ul style="list-style-type: none;">
+
+                <li>1. Security risks: Outsourcing community cloud means that the third-party provider will have access
+                    to
+                    sensitive data and information, which may pose security risks if the provider does not have adequate
+                    security measures in place.</li><br>
+
+                <li>2. Dependence on third-party providers: Outsourcing community cloud means that the participating
+                    organizations will be dependent on the third-party provider for the management and maintenance of
+                    the
+                    community cloud infrastructure. This can limit the control and flexibility of the participating
+                    organizations.</li><br>
+
+                <li>3. Integration issues: Outsourcing community cloud may pose integration issues if the third-party
+                    provider's infrastructure is not compatible with the participating organizations' existing systems
+                    and
+                    applications.</li><br>
+
+                <li>4. Legal and regulatory compliance: Outsourcing community cloud may pose legal and regulatory
+                    compliance
+                    issues, as the participating organizations will be responsible for ensuring that the third-party
+                    provider complies with all relevant laws and regulations.</li><br>
+
+                <li>5. Data ownership and control: Outsourcing community cloud may pose data ownership and control
+                    issues,
+                    as the participating organizations may not have full control over their data and information.</li>
+                <br>
+
+                <li>6. Cost and performance issues: Outsourcing community cloud may pose cost and performance issues if
+                    the
+                    third-party provider's services are not cost-effective or do not meet the performance requirements
+                    of
+                    the participating organizations.</li><br>
+            </ul>
+            <p>It is important for organizations to carefully evaluate these issues and determine whether outsourcing
+                community cloud is suitable for their needs before deciding to adopt this model. It is also important to
+                choose a trusted third-party provider that follows privacy and security protections required by law</p>
+            <br>
+            <h2><b>Advantages</b></h2>
+            <ul style="list-style-type: none;">
+                <li>Community cloud offers several advantages, including:</li><br>
+
+                <li>1. Cost savings: Community cloud allows multiple organizations to share the costs of infrastructure
+                    and
+                    services, which can result in significant cost savings compared to deploying and managing individual
+                    private clouds.</li><br>
+
+                <li>2. Resource pooling: Community cloud allows participating organizations to pool their resources,
+                    including hardware, software, and personnel, which can improve efficiency and reduce duplication of
+                    efforts.</li><br>
+
+                <li>3. Specialized expertise: Community cloud providers may have specialized expertise in managing cloud
+                    infrastructure and services, which can provide participating organizations with access to advanced
+                    technology and expertise.</li><br>
+
+                <li> 4. Improved scalability: Community cloud can provide participating organizations with improved
+                    scalability, as the shared infrastructure and services can be easily scaled up or down to meet
+                    changing
+                    needs.</li><br>
+
+                <li>5. Enhanced security: Community cloud can provide enhanced security, as the shared infrastructure
+                    and
+                    services can be designed and managed with the security needs of the participating organizations in
+                    mind.</li><br>
+
+                <li> 6. Improved collaboration: Community cloud can facilitate improved collaboration and communication
+                    among participating organizations, as they can share data and information more easily and efficiently.
+                </li><br>
+
+                <li>7. Reduced environmental impact: Community cloud can reduce the environmental impact of cloud
+                    computing, as the shared infrastructure and services can be designed to be more energy-efficient and
+                    environmentally friendly.</li><br>
+            </ul>
+            <h2><b>Disadvantage</b></h2>
+            <ul style="list-style-type: none;">
+                <p>Community cloud has some disadvantages, including:</p>
+
+                <li>1. Limited control and flexibility: Community cloud means that participating organizations will have
+                    limited control and flexibility over the infrastructure and services, as they will be shared with
+                    other organizations. This can limit customization and flexibility.</li><br>
+
+                <li>2. Dependence on third-party providers: Community cloud means that participating organizations will
+                    be dependent on the third-party provider for the management and maintenance of the infrastructure and
+                    services. This can limit control and flexibility and pose risks if the provider does not have
+                    adequate security measures in place.</li><br>
+
+                <li>3. Integration issues: Community cloud may pose integration issues if the third-party provider's
+                    infrastructure is not compatible with the participating organizations' existing systems and
+                    applications.</li><br>
+
+                <li>4. Legal and regulatory compliance: Community cloud may pose legal and regulatory compliance issues,
+                    as the participating organizations will be responsible for ensuring that the third-party provider complies
+                    with all relevant laws and regulations.</li><br>
+
+                <li>5. Data ownership and control: Community cloud may pose data ownership and control issues, as the
+                    participating organizations may not have full control over their data and information.</li><br>
+
+                <li>6. Performance issues: Community cloud may pose performance issues if the shared infrastructure and
+                    services are not optimized for the participating organizations' specific needs.</li><br>
+            </ul>
+            <h2>Hybrid Cloud</h2>
+            <p>Hybrid cloud is a type of cloud computing that combines public cloud services, such as Amazon Web
+                Services (AWS) or Microsoft Azure, with private cloud services, such as a company's own data center.
+                This combination allows organizations to store data and run applications on the most appropriate
+                platform for their needs. For example, an organization might use a public cloud service to store
+                non-sensitive data, such as marketing materials, while using a private cloud service to store sensitive
+                data, such as customer information. Hybrid cloud can also help organizations save money by allowing them
+                to use public cloud services for tasks that require a lot of computing power, while using private cloud
+                services for tasks that require less computing power. Overall, hybrid cloud provides organizations with
+                more flexibility and control over their data and applications.</p>
+            <h2><b>characteristics</b></h2>
+            <dd>Hybrid cloud has several characteristics that make it a popular choice for many organizations. These
+                include:</dd>
+
+            <li>1. Flexibility: Hybrid cloud allows organizations to choose the best cloud infrastructure for their
+                needs, whether that be public or private cloud services.</li><br>
+
+            <li>2. Scalability: Hybrid cloud allows organizations to scale their computing resources up or down as
+                needed, depending on their workload.</li><br>
+
+            <li> 3. Security: Hybrid cloud allows organizations to keep sensitive data on-premises, while still taking
+                advantage of public cloud services for less sensitive data.</li><br>
+
+            <li>4. Cost-effectiveness: Hybrid cloud can help organizations save money by allowing them to use public
+                cloud services for tasks that require a lot of computing power, while using private cloud services for
+                tasks that require less computing power.</li><br>
+
+            <li>5. Reliability: Hybrid cloud can help organizations ensure that their data and applications are always
+                available, even if one cloud service experiences downtime.</li><br>
+
+            <p>Overall, hybrid cloud provides organizations with a flexible, scalable, secure, cost-effective, and
+                reliable cloud computing solution.</p><br>
+            <h2><b>Suitability</b></h2>
+            <dd>Hybrid cloud is suitable for organizations that have a need for both public and private cloud services.
+                It is also suitable for organizations that have sensitive data that needs to be kept on-premises, but
+                also require the scalability and flexibility of public cloud services. Hybrid cloud is also suitable for
+                organizations that want to take advantage of the cost savings of public cloud services while still
+                maintaining control over their data and applications. Finally, hybrid cloud is suitable for
+                organizations that want to ensure that their data and applications are always available, even if one
+                cloud service experiences downtime.</dd>
+            <h2><b>On-premise Hybrid cloud</b></h2>
+            <dd>On-premise hybrid cloud can present some challenges for organizations. One of the main issues is the
+                cost of maintaining the private cloud infrastructure on-premises. This can include the cost of hardware,
+                software, maintenance, and personnel. Another issue is the complexity of managing a hybrid cloud
+                environment, which can require specialized skills and expertise. Additionally, on-premise hybrid cloud
+                can be more difficult to scale than a public cloud service, which can limit an organization's ability to
+                grow. Finally, on-premise hybrid cloud can be more vulnerable to security threats than a public cloud
+                service, as the organization is responsible for securing the entire infrastructure. Overall, on-premise
+                hybrid cloud can be a viable solution for some organizations, but it requires careful planning,
+                management, and investment to be successful</dd>
+            <h2><b>Outsourced Hybrid cloud</b></h2>
+            <dd>Outsourcing hybrid cloud can be a viable solution for organizations that want to take advantage of cloud
+                computing benefits, but do not want to invest in their own infrastructure. Outsourcing hybrid cloud can
+                also be beneficial for organizations that do not have the expertise or resources to manage a hybrid
+                cloud environment. When outsourcing hybrid cloud, organizations can choose from a variety of cloud
+                service providers that offer different levels of service and support. It is important for organizations
+                to choose a trusted third-party cloud service provider that has a proven track record of providing
+                secure and reliable cloud services. When outsourcing hybrid cloud, organizations should also ensure that
+                they have a clear understanding of the service level agreement (SLA) and that they have adequate
+                security and backup measures in place to protect their data and applications. Finally, organizations
+                should ensure that they have a plan in place for managing their data and applications in the event that
+                they need to switch cloud service providers.</dd>
+            <h2><b>Issues with outsourced Hybrid cloud</b></h2>
+            <dd>Outsourcing hybrid cloud can present some challenges for organizations. One of the main issues is the
+                risk of data breaches or loss of control over data and applications. It is important for organizations
+                to choose a trusted third-party cloud service provider that has a proven track record of providing
+                secure and reliable cloud services. Additionally, outsourcing hybrid cloud can be more expensive than
+                managing an on-premise solution, as the organization will need to pay for the services provided by the
+                third-party cloud service provider. Another issue is the potential for vendor lock-in, where an
+                organization becomes dependent on a specific cloud service provider and is unable to switch to a
+                different provider without significant cost and disruption. Finally, outsourcing hybrid cloud can
+                present challenges related to data sovereignty and compliance, as different countries have different
+                laws and regulations related to data privacy and security. Overall, outsourcing hybrid cloud can be a
+                viable solution for some organizations, but it requires careful planning, management, and investment to
+                be successful.</dd>
+            <h2><b>Advantages</b></h2>
+            <li>Hybrid cloud offers several advantages for organizations. First, it provides the flexibility to choose
+                the best deployment model for each application or workload, based on factors such as security,
+                compliance, performance, and cost. This allows organizations to optimize their IT infrastructure and
+                improve their overall efficiency. Second, hybrid cloud can help organizations to reduce costs by
+                leveraging the benefits of both public and private cloud services. For example, organizations can use
+                public cloud services for non-sensitive workloads that require flexibility and scalability, while using
+                private cloud services for sensitive workloads that require enhanced security and control. Third, hybrid
+                cloud can help organizations to improve their disaster recovery and business continuity capabilities by
+                providing redundant and geographically dispersed infrastructure. Finally, hybrid cloud can help
+                organizations to meet regulatory and compliance requirements by providing a secure and compliant
+                infrastructure for sensitive data and applications. Overall, hybrid cloud can provide organizations with
+                the best of both worlds, combining the benefits of public and private cloud services to create a
+                flexible, scalable, and cost-effective IT infrastructure.</li><br>
+            <h2><b>Disadvantage</b></h2>
+            <li>Hybrid cloud also presents some disadvantages for organizations. One of the main challenges is the
+                complexity of managing a hybrid environment, which requires expertise and resources to ensure that the
+                different components of the infrastructure are integrated and working together effectively. This can
+                lead to higher operational costs and a longer time to implement changes. Additionally, hybrid cloud can
+                present security risks, as the organization needs to ensure that its data and applications are protected
+                across the different environments. This can be particularly challenging when integrating public cloud
+                services, which are managed by third-party providers. Another disadvantage is the potential for vendor
+                lock-in, as organizations may become dependent on specific cloud service providers and may find it
+                difficult to switch to a different provider in the future. Finally, hybrid cloud can present challenges
+                related to data sovereignty and compliance, as different countries have different laws and regulations
+                related to data privacy and security. Overall, hybrid cloud can be a complex and challenging environment
+                to manage, and requires careful planning, management, and investment to be successful.</li><br>
+            <h2><b>differentiate among public,private , community and hybrid cloud</b></h2>
+        </article>
+    </section>
+
+</body>
+
+</html>

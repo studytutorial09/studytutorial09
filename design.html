@@ -1,0 +1,184 @@
+<html>
+
+<head>
+    <title>java programming language</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2.5ch;
+    }
+
+    /* Style the header */
+    header {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), #009688), url(design\ and\ analysis\ of\ algorithms.jpeg);
+        background-size: cover;
+        background-position: center;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: rgb(17, 16, 16);
+    }
+
+    nav {
+        float: left;
+        width: 30%;
+        height: 3400px;
+        /* only for demonstration, should be removed */
+        background: #009688;
+        padding: 20px;
+    }
+
+    /* Style the list inside the menu */
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    article {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: #f1f1f1;
+        height: 3400px;
+        /* only for demonstration, should be removed */
+    }
+
+    article img {
+        width: 88%;
+        height: 11%;
+    }
+
+    .img1 {
+        width: 104%;
+        height: 7%;
+    }
+
+    article h2 {
+        color: rgb(34, 151, 151);
+    }
+
+    article ul {
+        list-style-type: none;
+    }
+
+    /* Clear floats after the columns */
+    section::after {
+        content: "";
+        display: table;
+        clear: bot
+    }
+
+    /* Style the footer */
+    footer {
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color: white;
+    }
+
+    /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+    @media (max-width: 600px) {
+
+        nav,
+        article {
+            width: 100%;
+            height: auto;
+        }
+    }
+</style>
+
+<body>
+    <header id="header">
+        <h2>Design And Analysis Of Algorithms</h2>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <h2><u>Describe the analysis of algorithms efficiency using different notations</u></h2>
+                <li>1. Demonstrate the basic data structure and algorithms</li><br>
+                <li>2. Calaulate the sum of first n<sup>th</sup>terms of a series</li><br>
+                <li>3. Describe various recursive and non-recurise algorithms</li><br>
+                <h2><u>Express the various searching and sorting problem</u></h2>
+                <li>1. Explian various searching algorithms ans also its performance characteristics</li><br>
+                <li>2. Discuess the problem of brute fource approach and decrease-and-conquer</li><br>
+                <li>3. Discuess the problem of divide and decrease-and-conquer approach</li><br>
+                <h2><u>Describe the graph structure and its operation</u></h2>
+                <li>1. Explian the various major components of graph and topological soeting technique</li><br>
+                <li>2. Write an algorithms to calculate minimum weight spanning tree in a connected graph</li><br>
+                <h2><u>Discuess the basic string related operation</u></h2>
+                <li>1. Explian string sorting and substring searching</li><br>
+                <li>2. illustrate basic pattern matching and data compression</li>br
+            </ul>
+        </nav>
+    </section>
+    <article>
+        <h1><u>Demonstrate the basic data structure and algorithms</u></h1>
+        <h1>Introduction to Algorithm:</h1>
+        <h2>Algorithm</h2>
+        <p>algorithm Interactions ka group hota ha. jeske dura kisi vesha problem ko solve kiya jata ha. in outher words
+            algorithm ek process ha jeske dura programmingme aane bali problem ko solve kiya jata ha. algorithm rule ka
+            collection hota ha. jenka use step by step kisi kam ko pura karne me kiya jata ha.
+            algorithm ko flowchart ka use karke present kiya jata ha. algorithm ka use hum kisi bhi programming language
+            jese ki-C,C++,jav and Python etc me kar sakte ha. </p>
+        <p>Algorithms are widely used throughout all areas of IT. In mathematics and computer science, an algorithm
+            usually refers to a small procedure that solves a recurrent problem. Algorithms are also used as
+            specifications for performing data processing and play a major role in automated systems.</p>
+        <p>An algorithm could be used for sorting sets of numbers or for more complicated tasks, like recommending user
+            content on social media. Algorithms typically start with initial input and instructions that describe a
+            specific computation. When the computation is executed, the process produces an output.</p>
+        <p>Algorithms use an initial input along with a set of instructions. The input is the initial data needed to
+            make decisions and can be represented in the form of numbers or words. The input data gets put through a set
+            of instructions, or computations, which can include arithmetic and decision-making processes. The output is
+            the last step in an algorithm and is normally expressed as more data.</p>
+        <h2><u>characteristics of Algorithm</u></h2><br>
+        <img src="Characteristics-of-algorithm-in-Hindi-768x471.png" alt="characteristics" width="23px" height="34px">
+        <h3><u>1. Unambiguous</u></h3>
+        <dd>algorithm espat honi chaheye eaka pratek step honi chahiye eske pratek step ka kebel ek meaning hona chahiye
+            eska means yaha ha. ki yah hame aasani se samjh aa jani chaiye.</dd>
+        <h3><u>2. Input</u></h3>
+        <dd>algorithm ke pass ek input hona he chaiye and yah input aachi tarha se defined honi chaiye. </dd>
+        <h3><u>3. Output</u></h3>
+        <dd>algorithm dura kam se kam ek output dena he chahiye.</dd>
+        <h3><u>4. Finiteness</u></h3>
+        <dd>algorithm finite hona he chahiye yah infinte nhi honi chahiye</dd>
+        <h3><u>5. Feasible</u></h3>
+        <dd>algrothim feasible hona chaiye ager hum esi algorithm banaya jo sambhab he nhi ha. to uska koi fayda nhi ha.
+        </dd>
+        <h3><u>6. Independent</u></h3>
+        <dd>algorithm Independent honi chahiye yah kisi language per dependent nhi honi chahiye means algorithm ka use
+            sabhi language me use kiya ja sakna chahiye</dd>
+        <h2><u>Advantages of Algorithm</u></h2>
+        <ul>
+            <li>1. algorithm ko samjhna aasan hota ha.</li><br>
+            <li>2. yaha kisi problem ko slove karne me help karta ha.</li><br>
+            <li>3. algorithm ko real program me convert karna aasan hota ha. </li><br>
+            <li>4. yaha kisi problem ko step by step solve kaeta ha.</li><br>
+            <li>5. yaha kisi programming language per depend nhi hota ha.</li><br>
+            <li>6. esme debugging karna aasan hota ha.</li><br>
+        </ul>
+        <h2><u>Disadvantage of algorithm</u></h2>
+        <ul>
+            <li>1. algorithm ko likhna kafi jada time lagta ha.</li><br>
+            <li>2. bade algorithm bahut complex hote ha.</li><br>
+            <li>3. esme loop statement jese ki- while loop, for loop etc ko dekhna hard hota ha.</li><br>
+        </ul>
+        <h2><u>Type of algorithm</u></h2>
+        <h3><u>Search</u></h3>
+        <dd>es algorithm ka use kisi item ko search karne ke liye kiya jata ha.</dd>
+        <h3><u>Sort</u></h3>
+        <dd>es algorithm ka use items ko ek order me sort karne ke liye kiya jata ha.</dd>
+        <h3><u>Delete</u></h3>
+        <dd>es algorithm ka use items ko delete karne ke liye kiya jata ha.</dd>
+        <h3><u>Insert</u></h3>
+        <dd>es algorithm ka use pahle se present items ko update karne ke liye kiya jata ha.</dd>
+        <h3><u>Update</u></h3>
+        <dd>es algorithm ka use pahle se present item ko update karne ke liye kiya jata ha. </dd>
+    </article>
+</body>
+
+</html>

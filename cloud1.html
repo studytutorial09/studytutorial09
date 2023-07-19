@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the header */
+        header {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), #009688), url(cloud.jpeg);
+            background-size: cover;
+            background-position: center;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: rgb(17, 16, 16);
+        }
+
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+            float: left;
+            width: 30%;
+            background: #009688;
+            height: 3787;
+            padding: 20px;
+        }
+        /* only for demonstration, should be removed */
+
+        /* Style the list inside the menu */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav h4{
+            margin-top:334ch;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: auto;
+            /* only for demonstration, should be removed */
+        }
+
+        article h2 {
+            color: rgb(34, 151, 151);
+        }
+
+        article img {
+            width: 34%;
+            height: 34%;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: bot
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="cloudimg">
+        <h2>Cloud Computing</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <h1>1. Identify the various attributes, elements and actors of cloud computing</h1><br>
+                <li><a href="cloud.html">1. basics and technological importance of Cloud Computing</a></li>
+                <li><a href="cloud1.html">2. various attributes, elements and actors of cloud computing</a></li><br>
+                <h1>2. EXPLAIN THE CONCEPT OF CLOUD DEPLOYMENT MODEL</h1><br>
+                <li><a href="cloud2.html">1.Discuss concept, characteristics and challenges of public & private cloud.
+                    </a></li>
+                <li><a href="cloud3.html">2. community & hybrid cloud</a></li><br>
+                <h1>3. INTERPRATE VARIOUS CLOUD SERVICE MODELS.</h1><br>
+                <li><a href="cloud4.html">1. Infrastructure as a Service(IaaS) & Platform as a Service (PaaS)</a></li>
+                <li><a href="cloud5.html">2. Software as a Service (SaaS)</a></li><br>
+                <h1>4. DISCUSS THE ROLE OF VIRTUALIZATION AND BALANCING IN CLOUD COMPUTING.</h1><br>
+                <li><a href="cloud6.html">1.Explain the importance of virtualization in Cloud Computing.</a></li>
+                <li><a href="cloud7.html">2.Explain load balancing and it's types. </a></li><br>
+                <h1>5. EXPLAIN THE BASIC CONCEPTS OF CLOUD SECURITY.</h1><br>
+                <li><a href="cloud8.html">1.Identify core concepts of the network security & the security threats in
+                        Cloud Computing.</a></li>
+                <li><a href="cloud9.html">2.List some important cloud computing driven commercial systems and
+                        applications</a></li><br>
+            </ul>
+            <h4>goto next page</h4>
+        </nav>
+
+        <article>
+            <h1> various attributes, elements and actors of cloud computing</h1>
+            <h2>Cloud attributes</h2>
+            <p>Cloud attributes refer to the characteristics or features of cloud computing that make it a desirable
+                solution for organizations. These attributes include on-demand self-service, broad network access,
+                resource pooling, rapid elasticity, measured service, and service-oriented architecture (SOA). These
+                attributes enable cloud computing to provide benefits such as cost savings, agility, scalability, and
+                flexibility.</p><br>
+            <h2><b>Elasticity</b></h2>
+            <dd>Elasticity is a key attribute of cloud computing that refers to the ability of a cloud environment to
+                quickly and automatically scale computing resources up or down in response to changing demand. This
+                means that users can easily add or remove resources, such as servers or storage, to match their current
+                needs, without having to worry about the underlying infrastructure.<br> This allows organizations to be more
+                agile, as they can quickly respond to changes in demand, and more cost-effective, as they only pay for
+                the resources they need. Elasticity is one of the key benefits of cloud computing, as it enables
+                organizations to scale their operations up or down as needed, without having to invest in additional
+                hardware or software.</dd><br>
+            <h2><b>Pay par uses</b></h2>
+            <dd>"Pay per user" is a pricing model used by some software and cloud service providers, where users are
+                charged based on the number of users who access the service. This means that organizations only pay for
+                the number of users who actually use the service, rather than paying a fixed fee for a set number of
+                users. <br>This model can be more cost-effective for organizations that have a fluctuating number of users,
+                as they only pay for what they use. However, it can also be more expensive for organizations with a
+                large number of users, as the cost per user can be higher than a fixed fee model.</dd><br>
+            <h2><b>Multi-tenancy</b></h2>
+            <dd>Multi-tenancy is a software architecture model where a single instance of an application serves multiple
+                customers, known as tenants. Each tenant is isolated from the others, with their own data,
+                configuration, and customizations.<br> Multi-tenancy is commonly used in cloud computing, where a cloud
+                provider can host multiple customers on a shared infrastructure, while still providing a high level of
+                security and privacy. This approach enables cloud providers to maximize resource utilization and reduce
+                costs, while also providing customers with a scalable and cost-effective solution</dd><br>
+            <h2><b>Scalability</b></h2>
+            <dd>Scalability is the ability of a system or application to handle growing amounts of work or traffic,
+                while maintaining its performance and reliability. In the context of cloud computing, scalability refers
+                to the ability of a cloud environment to quickly and easily scale computing resources up or down to meet
+                changing demand.<br> This means that organizations can add or remove resources, such as servers or storage,
+                as needed, without having to worry about the underlying infrastructure. Scalability is a key benefit of
+                cloud computing, as it enables organizations to easily handle fluctuations in demand, without having to
+                invest in additional hardware or software.</dd><br>
+            <h2><b>Self-provisioning of resources</b></h2>
+            <dd>Self-provisioning of resources is a process where resources such as storage, compute, network, and
+                applications are automatically allocated and managed without the need for human intervention. This
+                process can be achieved using various tools and technologies, such as cloud computing, virtualization,
+                and containerization. The goal of self-provisioning is to enable organizations to quickly and easily
+                deploy resources as needed, without the need for manual intervention. This can help to improve
+                efficiency, reduce costs, and increase agility.</dd><br>
+            <h2><b>grographical freedom</b></h2>
+            <dd>Geographical freedom refers to the ability to work from anywhere in the world, without being tied to a
+                specific location. This can be achieved through the use of remote work technologies, such as video
+                conferencing, collaboration tools, and cloud computing. Geographical freedom can provide many benefits,
+                such as increased flexibility, reduced commuting time, and access to a wider pool of talent. However, it
+                can also present challenges, such as communication difficulties and the need for strong self-discipline
+                and time management skills.</dd><br>
+            <h2>Cloud Elements</h2>
+            <p>Cloud computing is a model for delivering computing services over the internet. With cloud computing,
+                organizations can access computing resources, such as storage, compute power, and applications,
+                on-demand, rather than having to invest in and manage on-premises infrastructure. Cloud computing can be
+                provided through a variety of deployment models, including public, private, and hybrid clouds.</p><br>
+            <p>Public clouds are provided by third-party cloud service providers, and are accessible to anyone with an
+                internet connection. Private clouds are operated solely for a single organization, and are not
+                accessible to the public. Hybrid clouds are a combination of public and private clouds, and can provide
+                the benefits of both deployment models.</p>
+            <p><br>Cloud computing can provide many benefits to organizations, such as improved scalability, reduced
+                costs, and improved flexibility. With cloud computing, organizations can quickly and easily access
+                computing resources as needed, without the need for on-premises infrastructure. This can help to reduce
+                costs, as organizations only pay for the resources they use, and can easily scale up or down as needed.<br>
+            </p>
+            <p><br>However, cloud computing can also present challenges, such as security concerns and the need for
+                reliable internet connectivity. Organizations must ensure that their data is secure when stored in the
+                cloud, and that they have reliable internet connectivity to access cloud resources. Additionally,
+                organizations must ensure that their cloud service provider is reliable and can provide the level of
+                service they require.</p><br>
+            <p>In other words Cloud computing refers to the delivery of computing services, such as storage, compute
+                power, and applications, over the internet. These services are provided by a network of remote servers,
+                rather than on a local server or personal computer. Cloud computing allows organizations to quickly and
+                easily access computing resources as needed, without the need for on-premises infrastructure. It can
+                provide many benefits, such as increased scalability, reduced costs, and improved flexibility. However,
+                it can also present challenges, such as security concerns and the need for reliable internet
+                connectivity.</p><br>
+            <li><b>Client/user</b></li>
+            <dd>A client or user is an individual or organization that uses a service or product provided by another
+                individual or organization. In the context of technology, a client or user typically refers to someone
+                who uses a software application, website, or other digital service. Clients or users can be internal or
+                external to an organization, and can include employees, customers, partners, or other stakeholders. The
+                needs and preferences of clients or users are an important consideration in the design and development
+                of technology solutions.</dd><br>
+            <li><b>Data Center</b></li>
+            <dd>A data center is a facility used to house computer systems and associated components, such as
+                telecommunications and storage systems. Data centers are used by organizations to store, process, and
+                manage large amounts of data. They typically include redundant power supplies, backup generators,
+                cooling systems, and security measures to ensure that the systems housed within them are protected from
+                physical damage, cyber attacks, and other threats.<br>
+                Data centers are an important part of the infrastructure that supports the internet and other digital
+                services. They enable organizations to store and process large amounts of data, which is essential for a
+                wide range of activities, including e-commerce, social media, and cloud computing.</dd><br>
+            <li><b>Manager</b></li>
+            <dd>A cloud elements manager is a professional responsible for overseeing the implementation and management
+                of cloud-based integration solutions. Cloud Elements is a cloud-based integration platform that enables
+                organizations to connect their applications and data sources with a range of cloud services, such as
+                Salesforce, HubSpot, and Microsoft Dynamics.</dd><br>
+            <dd>A cloud elements manager is typically responsible for managing the implementation and configuration of
+                the Cloud Elements platform, as well as ensuring that it is integrated with other systems and
+                applications as required. They may also be responsible for managing the ongoing operation and
+                maintenance of the platform, as well as providing support to end-users and other stakeholders.</dd><br>
+            <li><b>Host</b></li>
+            <dd>A host in Cloud Elements is a service or application that provides data or functionality to other
+                services or applications through the Cloud Elements platform. Cloud Elements is a cloud-based
+                integration platform that enables organizations to connect their applications and data sources with a
+                range of cloud services, such as Salesforce, HubSpot, and Microsoft Dynamics.</dd><br>
+            <dd> A host in Cloud Elements may be a cloud service, such as Salesforce or HubSpot, or it may be an
+                on-premise application or service that is exposed through a REST API. The Cloud Elements platform
+                provides a unified API that enables developers to access the functionality of these hosts through a
+                single, standardized interface.</dd><br>
+            <li><b>distributed server</b></li>
+            <dd>A distributed server is a network of servers that work together to provide a single, unified service.
+                Each server in a distributed server network has a specific role to play, and together they provide a
+                more powerful and scalable solution than a single, centralized server.</dd><br>
+            <dd>Distributed servers are often used in large-scale web applications or services, where a single server
+                may not be able to handle the load of many simultaneous requests. By distributing the load across
+                multiple servers, the service can handle a much larger number of requests and provide a more reliable
+                and scalable solution.</dd><br>
+            <dd>One common approach to implementing a distributed server is to use a load balancer, which distributes
+                incoming requests across multiple servers based on a set of rules or algorithms. This ensures that each
+                server in the network is being used effectively and that the load is distributed evenly across the
+                network.</dd><br>
+            <h2>Actors of Cloud</h2>
+            <p>A definition is a statement that explains the meaning of a word or phrase. It can be used to clarify the
+                meaning of a term, concept, or idea. Definitions can be found in a variety of sources, such as
+                dictionaries, encyclopedias, textbooks, and online resources. They are often used in academic writing to
+                provide a clear and concise explanation of a term or concept, and to ensure that readers have a common
+                understanding of the subject matter. A good definition should be accurate, concise, and easy to
+                understand.</p><br>
+            <li><b>Cloud Service Provider</b></li>
+            <dd>A cloud service provider is one of the key actors in the cloud computing ecosystem. Cloud service
+                providers are organizations that offer cloud-based services to end-users, such as individuals,
+                businesses, and other organizations. These services can include storage, computing power, network
+                resources, software applications, and other IT resources that can be accessed over the internet.</dd><br>
+
+            <dd>Cloud service providers operate large data centers that house the physical infrastructure needed to
+                deliver cloud services, including servers, storage devices, networking equipment, and other hardware.
+                They also provide the software and tools needed to manage and monitor these resources, as well as the
+                security measures needed to protect them from cyber threats.</dd><br>
+
+             <dd>Some of the most well-known cloud service providers include Amazon Web Services (AWS), Microsoft Azure,
+                Google Cloud, IBM Cloud, and Oracle Cloud. These providers offer a wide range of cloud-based services to
+                customers around the world, and are constantly innovating and improving their offerings to meet the
+                evolving needs of their customers.</dd><br>
+            <li><b>Cloud Broker</b></li>
+            <dd>A cloud broker is an intermediary organization or individual that helps customers find and select the
+                most appropriate cloud services and providers to meet their specific needs. Cloud brokers act as an
+                intermediary between cloud service providers and cloud consumers, helping to match customers with the
+                right cloud services based on their requirements, budget, and other factors.</dd><br>
+
+            <dd> Cloud brokers typically offer a range of services, including cloud service selection, negotiation,
+                integration, and management. They may also provide consulting services to help customers develop cloud
+                migration strategies and optimize their use of cloud services.</dd><br>
+
+            <dd>Cloud brokers can help customers save time and money by reducing the complexity of cloud service
+                selection and management. By leveraging their expertise and knowledge of the cloud computing market,
+                cloud brokers can help customers find the best cloud services for their needs, negotiate favorable
+                pricing and contract terms, and ensure that the cloud services are integrated and managed effectively.</dd><br>
+            <li><b>Client/Cloud user</b></li>
+            <dd>A client or cloud user is a key actor in the cloud computing ecosystem. A client is an individual or
+                organization that uses cloud-based services provided by a cloud service provider. Cloud users can
+                include individuals, businesses, government agencies, and other organizations that require access to
+                computing resources, storage, and other IT services.</dd><br>
+
+            <dd>Cloud users typically access cloud services over the internet using a variety of devices, including
+                desktop and laptop computers, smartphones, and tablets. They may use cloud services for a wide range of
+                purposes, including data storage and backup, software development and testing, website hosting, and
+                running business-critical applications.</dd><br>
+
+            <dd>Cloud users typically pay for the cloud services they use on a subscription basis, which can be based on
+                factors such as the amount of storage or computing power they require, the number of users, and the
+                level of support they need.</dd>
+        </article>
+    </section>
+
+</body>
+
+</html>

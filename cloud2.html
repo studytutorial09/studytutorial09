@@ -1,0 +1,415 @@
+<html lang="en">
+
+<head>
+    <title>CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the header */
+        header {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), #009688), url(cloud.jpeg);
+            background-size: cover;
+            background-position: center;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: rgb(17, 16, 16);
+        }
+
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+            float: left;
+            width: 30%;
+            height: 5200px;
+            /* only for demonstration, should be removed */
+            background: #009688;
+            padding: 20px;
+        }
+
+        /* Style the list inside the menu */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav h3{
+            margin-top: 394ch;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: auto;
+            /* only for demonstration, should be removed */
+        }
+
+        article img {
+            width: 34%;
+            height: 34%;
+        }
+        article h2 {
+            color: rgb(34, 151, 151);
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: bot
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="cloudimg">
+        <h2>Cloud Computing</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <h1>1. Identify the various attributes, elements and actors of cloud computing</h1><br>
+                <li><a href="cloud.html">1. basics and technological importance of Cloud Computing</a></li>
+                <li><a href="cloud1.html">2. various attributes, elements and actors of cloud computing</a></li><br>
+                <h1>2. EXPLAIN THE CONCEPT OF CLOUD DEPLOYMENT MODEL</h1><br>
+                <li><a href="cloud2.html">1.Discuss concept, characteristics and challenges of public & private cloud.
+                    </a></li>
+                <li><a href="cloud3.html">2. community & hybrid cloud</a></li><br>
+                <h1>3. INTERPRATE VARIOUS CLOUD SERVICE MODELS.</h1><br>
+                <li><a href="cloud4.html">1. Infrastructure as a Service(IaaS) & Platform as a Service (PaaS)</a></li>
+                <li><a href="cloud5.html">2. Software as a Service (SaaS)</a></li><br>
+                <h1>4. DISCUSS THE ROLE OF VIRTUALIZATION AND BALANCING IN CLOUD COMPUTING.</h1><br>
+                <li><a href="cloud6.html">1.Explain the importance of virtualization in Cloud Computing.</a></li>
+                <li><a href="cloud7.html">2.Explain load balancing and it's types. </a></li><br>
+                <h1>5. EXPLAIN THE BASIC CONCEPTS OF CLOUD SECURITY.</h1><br>
+                <li><a href="cloud8.html">1.Identify core concepts of the network security & the security threats in
+                        Cloud Computing.</a></li>
+                <li><a href="cloud9.html">2.List some important cloud computing driven commercial systems and
+                        applications</a></li><br>
+            </ul>
+            <h3>GOTO THE NEXT PAGE</h3>
+        </nav>
+
+        <article>
+            <h1>Discuss concept, characteristics and challenges of public & private cloud</h1>
+            <h2>Public Cloud</h2>
+            <p>Public cloud refers to a type of cloud computing service that provides computing resources, such as
+                virtual machines, storage, and applications, over the internet to multiple customers. Public cloud
+                services are typically offered by third-party cloud service providers, such as Amazon Web Services
+                (AWS), Microsoft Azure, and Google Cloud Platform.</p>
+
+            <dd>In a public cloud environment, customers can access computing resources on-demand and pay for only the
+                resources they use, typically on a subscription or pay-per-use basis. Public cloud services are designed
+                to be highly scalable and flexible, allowing customers to quickly and easily provision and de-provision
+                resources as needed.</dd>
+
+            <dd>Public cloud services are often used by businesses and organizations of all sizes as a cost-effective
+                way to access computing resources without having to invest in expensive hardware and software
+                infrastructure. Public cloud services can be used for a wide range of purposes, including data storage
+                and backup, software development and testing, website hosting, and running business-critical
+                applications.</dd>
+
+            <dd>Overall, public cloud services offer a highly flexible and scalable way for customers to access
+                computing resources on-demand, without having to invest in expensive hardware and software
+                infrastructure.</dd>
+            <h2><b>Characteristics</b></h2>
+            <dd>Public cloud is a type of cloud computing in which a third-party provider offers computing resources,
+                such as servers, storage, and applications, over the public internet. One of the key characteristics of
+                public cloud is its scalability. Public cloud providers allow users to quickly and easily scale their
+                computing resources up or down as needed, depending on their changing business needs. This can be
+                particularly useful for businesses that experience unexpected spikes in demand or need to rapidly expand
+                their operations.</dd>
+
+            <dd>Another key characteristic of public cloud is its accessibility. Because public cloud resources are
+                delivered over the public internet, users can access them from anywhere with an internet connection.
+                This can be particularly useful for businesses with remote workers or multiple locations, as it allows
+                them to easily collaborate and share resources across different teams and geographies.</dd>
+
+            <dd>Finally, public cloud is often characterized by its cost-effectiveness. Because public cloud providers
+                can leverage economies of scale and share resources across multiple customers, they are often able to
+                offer computing resources at a lower cost than would be possible for individual businesses to achieve on
+                their own. This can be particularly useful for small and medium-sized businesses that may not have the
+                resources to invest in their own on-premises infrastructure.</dd>
+            <h2><b>Suitability</b></h2>
+            <dd>Public cloud can be suitable for a wide range of businesses, from small startups to large enterprises.
+                One of the key benefits of public cloud is its scalability. Public cloud providers allow users to
+                quickly and easily scale their computing resources up or down as needed, depending on their changing
+                business needs. This can be particularly useful for businesses that experience unexpected spikes in
+                demand or need to rapidly expand their operations. For example, a retail business may experience a
+                sudden surge in traffic during a holiday shopping season, and may need to quickly scale up their
+                computing resources to handle the increased demand.</dd>
+
+            <dd>Additionally, public cloud can be a cost-effective option for businesses that may not have the resources
+                to invest in their own on-premises infrastructure. Because public cloud providers can leverage economies
+                of scale and share resources across multiple customers, they are often able to offer computing resources
+                at a lower cost than would be possible for individual businesses to achieve on their own. This can be
+                particularly useful for small and medium-sized businesses that may not have the resources to invest in
+                their own on-premises infrastructure.</dd>
+
+            <dd>However, businesses should carefully consider their specific needs and requirements before choosing a
+                public cloud provider. For example, businesses that handle sensitive data may have specific security and
+                privacy requirements that must be met, and may need to ensure that their public cloud provider has
+                appropriate security measures in place to protect their data. Additionally, businesses that require high
+                levels of customization or control over their computing environment may find that public cloud is not
+                the best fit for their needs.</dd>
+
+            <dd>Overall, public cloud can be a powerful tool for businesses looking to scale their operations and reduce
+                costs, but it is important to carefully evaluate the suitability of public cloud for your specific needs
+                before making a decision.</dd>
+            <h2><b>Issues with public cloud</b></h2>
+            <dd>While public cloud can offer many benefits, there are also some potential issues that businesses should
+                be aware of. One of the main concerns with public cloud is security. Because public cloud providers
+                share resources across multiple customers, there is a risk that one customer's data could be accessed or
+                compromised by another customer. Additionally, public cloud providers may be targeted by hackers or
+                other malicious actors, which could result in the theft or exposure of sensitive data.</dd>
+
+            <dd>Another potential issue with public cloud is reliability. Because public cloud providers rely on shared
+                resources, there is a risk that a failure or outage in one part of the system could impact multiple
+                customers. Additionally, public cloud providers may experience downtime or other disruptions due to
+                maintenance or upgrades.</dd>
+
+            <dd>Finally, businesses should be aware of the potential for vendor lock-in when using public cloud. Because
+                public cloud providers often offer proprietary tools and services, it can be difficult for businesses to
+                switch to a different provider if they become dissatisfied with their current provider. This can limit a
+                business's flexibility and make it more difficult to adapt to changing needs.</dd>
+
+            <dd>Overall, while public cloud can offer many benefits, businesses should carefully evaluate the potential
+                issues and risks before making a decision to use public cloud. It is important to choose a reputable
+                provider with a strong track record of security and reliability, and to have appropriate backup and
+                disaster recovery plans in place to mitigate the risks of downtime or data loss.</dd>
+            <dd></dd>
+            <h2><b>Advantages</b></h2>
+            <li>Public cloud can offer many advantages for businesses, including:</li>
+            <li>1. Scalability: Public cloud providers allow businesses to quickly and easily scale their computing
+                resources up or down as needed, depending on their changing business needs.</li><br>
+            <li>2. Cost-effectiveness: Public cloud providers can leverage economies of scale and share resources across
+            multiple customers, which can result in lower costs for businesses that may not have the resources to invest
+            in their own on-premises infrastructure.</li><br>
+
+            <li>3. Flexibility: Public cloud providers offer a wide range of tools and services that can be customized to
+            meet the specific needs of individual businesses.</li><br>
+
+            <li>4. Reliability: Public cloud providers typically have robust backup and disaster recovery systems in place
+            to ensure that data is protected and available even in the event of an outage or other disruption.</li><br>
+
+            <li>5. Security: Public cloud providers typically have strong security measures in place to protect customer
+            data, including encryption, access controls, and monitoring.</li><br>
+            <h2><b>Disadvantage</b></h2>
+            <li>While public cloud can offer many advantages for businesses, there are also some potential disadvantages
+                that should be considered before making a decision to use public cloud. These include:</li>
+
+            <li>1. Security: While public cloud providers typically have strong security measures in place, there is
+                always a risk that data could be compromised or accessed by unauthorized users. Additionally, businesses
+                may be required to give up some control over their data when using public cloud.</li><br>
+
+            <li>2. Reliability: Public cloud providers rely on shared resources, which can result in downtime or other
+                disruptions if there is a failure or outage in one part of the system. Additionally, businesses may
+                experience slower performance or reduced availability during peak usage periods.</li><br>
+
+            <li>3. Compliance: Depending on the industry and location of the business, there may be regulatory or
+                compliance requirements that make it difficult or impossible to use public cloud.</li><br>
+
+            <li>4. Vendor lock-in: Because public cloud providers often offer proprietary tools and services, it can be
+                difficult for businesses to switch to a different provider if they become dissatisfied with their
+                current provider.</li><br>
+
+            <li>5. Data transfer costs: Public cloud providers may charge fees for transferring data in or out of their
+                system, which can add up quickly for businesses with large amounts of data.</li><br>
+            <h2>Private Cloud</h2>
+            <p>A private cloud is a type of cloud computing environment that is dedicated to a single organization or
+                user. Unlike public cloud services, which are shared among multiple organizations, a private cloud is
+                designed to meet the specific needs of a single organization. Private clouds can be hosted on-premises
+                or by third-party providers, and can be managed by the organization or by a third-party service
+                provider. Private clouds offer many of the same benefits as public clouds, such as scalability,
+                flexibility, and cost-effectiveness, but with added security and control over data and resources.
+                Private clouds are often used by businesses and organizations that require high levels of security,
+                compliance, or customization, or that have specialized computing or storage requirements that cannot be
+                met by public cloud providers.</p>
+            <h2><b>Characteristics</b></h2>
+            <dd>1. Dedicated infrastructure: Private clouds are designed to meet the specific needs of a single
+                organization, and are typically hosted on dedicated infrastructure that is not shared with other
+                organizations.</dd>
+
+            <dd>2. Customization: Private clouds can be customized to meet the specific requirements of the
+                organization, including security, compliance, and performance needs.</dd><br>
+
+            <dd>3. Control: With a private cloud, the organization has complete control over the infrastructure, data,
+                and applications, which can help to ensure security and compliance.</dd><br>
+
+            <dd>4. Scalability: Private clouds can be scaled up or down as needed to meet changing demands, without the
+                need to rely on third-party providers or shared resources.</dd><br>
+
+            <dd>5. Cost-effectiveness: Private clouds can be more cost-effective than public clouds for organizations
+                with high levels of resource utilization, as they can avoid the costs of over-provisioning or
+                under-utilization of resources.</dd><br>
+
+            <dd>6. High levels of security: Private clouds can offer higher levels of security than public clouds, as
+                the organization has complete control over the infrastructure and can implement customized security
+                measures.</dd><br>
+
+            <dd> 7. Integration with existing infrastructure: Private clouds can be integrated with existing on-premises
+                infrastructure, which can help to ensure compatibility and reduce the need for expensive migration or
+                integration projects.</dd><br>
+            <h2><b>Suitability</b></h2>
+            <dd>Private clouds can be suitable for organizations that have specialized computing or storage
+                requirements, need high levels of security or compliance, or require customization and control over
+                their infrastructure. Private clouds are often used by businesses and organizations in industries such
+                as healthcare, finance, government, and education, where data security and privacy are critical
+                concerns. Private clouds can also be a good fit for organizations that need to integrate their
+                on-premises infrastructure with cloud-based services, or that have high levels of resource utilization
+                and need to avoid the costs of over-provisioning or under-utilization of resources. However, private
+                clouds can be more complex and expensive to set up and manage than public clouds, and may require
+                specialized expertise and resources to operate effectively.</dd>
+            <h2><b>On-premise private cloud</b></h2>
+            <dd>1. High costs: On-premises private clouds can be expensive to set up and maintain, as they require
+                specialized hardware, software, and personnel to operate effectively.</dd>
+
+            <dd>2. Limited scalability: On-premises private clouds may have limited scalability, as they are limited by
+                the available hardware and infrastructure of the organization.</dd>
+
+            <dd>3. Security risks: On-premises private clouds can be vulnerable to security risks, such as cyberattacks,
+                data breaches, and physical security threats, which can be difficult to manage and mitigate.</dd>
+
+            <dd>4. Maintenance and upgrades: On-premises private clouds require regular maintenance and upgrades to
+                ensure optimal performance and security, which can be time-consuming and costly.</dd>
+
+            <dd>5. Lack of expertise: Setting up and managing an on-premises private cloud requires specialized
+                expertise and resources, which may be difficult for some organizations to obtain.</dd>
+
+            <dd>6. Limited access to cloud-based services: On-premises private clouds may have limited access to
+                cloud-based services, which can limit the functionality and capabilities of the organization.</dd>
+            <h2><b>Issues with on-premise private cloud</b></h2>
+            <dd>Lower costs: Outsourced private clouds can be more cost-effective than on-premises private clouds, as
+                they eliminate the need for specialized hardware, software, and personnel.</dd>
+
+            <dd> Scalability: Outsourced private clouds can be more scalable than on-premises private clouds, as they
+                can leverage the resources and infrastructure of the cloud provider, which can be scaled up or down as
+                needed.</dd>
+
+            <dd> Security: Outsourced private clouds can offer high levels of security, as they are typically hosted
+                in secure data centers with advanced security measures and protocols.</dd>
+
+            <dd> Expertise: Outsourced private clouds can provide access to specialized expertise and resources, which
+                can help organizations to optimize their cloud infrastructure and operations.</dd>
+
+            <dd> Flexibility: Outsourced private clouds can offer greater flexibility than on-premises private clouds,
+                as they can be customized to meet the specific needs of the organization.</dd>
+
+            <dd>Access to cloud-based services: Outsourced private clouds can provide access to a wide range of
+                cloud-based services and applications, which can help to enhance the functionality and capabilities of
+                the organization.</dd>
+            <h2><b>Outsourced private cloud</b></h2>
+            <dd>Dependency on cloud provider: Organizations that rely on outsourced private clouds are dependent on
+                the cloud provider for the availability, performance, and security of their cloud infrastructure and
+                data.</dd>
+
+            <dd> Security risks: Outsourced private clouds can be vulnerable to security risks, such as cyberattacks,
+                data breaches, and physical security threats, which can be difficult to manage and mitigate.</dd>
+
+            <dd>Compliance and regulatory issues: Outsourced private clouds may be subject to compliance and
+                regulatory requirements, which can vary by industry and location, and can be difficult to manage and
+                maintain.</dd>
+
+            <dd>Vendor lock-in: Organizations that rely on outsourced private clouds may be locked into a specific
+                cloud provider or platform, which can limit their flexibility and ability to switch providers or
+                platforms in the future.</dd>
+
+            <dd> Data privacy: Organizations that rely on outsourced private clouds may have limited control over the
+                privacy and security of their data, which can be a concern for organizations that handle sensitive or
+                confidential information.</dd>
+
+            <dd> Costs: Outsourced private clouds can be costly, particularly for organizations that require high
+                levels of customization or specialized services.</dd>
+
+            <p>It is important for organizations to carefully evaluate the benefits and risks of outsourced private
+                clouds, and to develop a comprehensive strategy for managing and mitigating the risks associated with
+                outsourced private clouds.</p>
+            <h2><b>Issues with outsourced private cloud</b></h2>
+            <dd></dd>
+            <h2><b>Advantages</b></h2>
+            <li>Private clouds offer several advantages over public clouds, including:</li>
+
+            <li> Enhanced security: Private clouds can provide higher levels of security than public clouds, as they
+                are typically hosted on-premises or in a dedicated data center with advanced security measures and
+                protocols.</li><br>
+
+            <li> Greater control: Private clouds provide greater control over the infrastructure and data, as they are
+                not shared with other organizations or users.</li><br>
+
+            <li> Customization: Private clouds can be customized to meet the specific needs of the organization,
+                including hardware, software, and security requirements.</li><br>
+
+            <li> Improved performance: Private clouds can provide improved performance over public clouds, as they are
+                not subject to the variability and latency of the public internet.</li><br>
+
+            <li> Compliance and regulatory requirements: Private clouds can be designed to meet specific compliance
+                and regulatory requirements, such as HIPAA, PCI, and GDPR.</li><br>
+
+            <li> Cost savings: Private clouds can be more cost-effective than public clouds for organizations with
+                high levels of utilization and long-term needs.</li><br>
+
+            <li> Scalability: Private clouds can be scaled up or down as needed, providing greater flexibility and
+                agility than on-premises infrastructure.</li><br>
+
+            <p> However, private clouds can also pose some challenges, including higher costs, greater complexity, and
+                the need for specialized expertise and resources. It is important for organizations to carefully
+                evaluate the benefits and risks of private clouds before making a decision.</p>
+            <h2><b>Disadvantage</b></h2>
+            <li>Private clouds can pose several disadvantages, including:
+
+            <li> Higher costs: Private clouds can be more expensive than public clouds, as they require significant
+                upfront investment in hardware, software, and infrastructure.</li><br>
+
+            <li> Greater complexity: Private clouds can be more complex to manage and maintain than public clouds, as
+                they require specialized expertise and resources.</li><br>
+
+            <li> Limited scalability: Private clouds may have limited scalability compared to public clouds, as they
+                are typically designed for a specific number of users or workloads.</li><br>
+
+            <li> Potential for vendor lock-in: Private clouds may be subject to vendor lock-in, as organizations may
+                become dependent on a specific vendor for hardware, software, and support.</li><br>
+
+            <li> Reduced agility: Private clouds may be less agile than public clouds, as they require more time and
+                resources to deploy and scale.</li><br>
+
+            <li> Limited access to new technologies: Private clouds may have limited access to new technologies and
+                services, as they rely on in-house expertise and resources.</li><br>
+
+            <li>Reduced geographic reach: Private clouds may have limited geographic reach, as they are typically
+                hosted on-premises or in a specific data center.</li><br>
+
+            <p>It is important for organizations to carefully evaluate the benefits and risks of private clouds, and to
+                develop a comprehensive strategy for managing and mitigating the risks associated with private clouds.</p>
+        </article>
+    </section>
+
+</body>
+
+</html>
