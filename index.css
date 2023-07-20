@@ -29,17 +29,16 @@ body{
     padding-top: 40px;
 }
 .banner-text h1{
-    font-size:8vh;
+    font-size:10vh;
     color: white;
 }
 .banner-text p{
-    font-size: 4vh;
+    font-size: 20px;
     color: white;
     font-style: italic;
 }
 .banner-text a{
-    padding: 2%;
-    
+    padding: 2%;  
 }
 .banner-btn{
     margin: 70px auto 0;
@@ -57,11 +56,11 @@ body{
     transition: color 0.5s;
 }
 .banner-btn a span{
-     width: 0%;
+     width: 0;
      height: 100%;
      position: absolute;
      top: 0;
-     left: 0%;
+     left: 0;
      background: #fff;
      z-index: -1;
      transition: 0.5s;
@@ -74,7 +73,7 @@ body{
     color: #000;
 }
 #sidenav{
-    width: 185px;
+    width: 250px;
     height: 100vh;
     position: fixed;
     right: -250px;
@@ -84,8 +83,8 @@ body{
     transition: 0.5s;
 }
 nav ul li{
-list-style: none;
-margin: 50px 20px; 
+    list-style: none;
+    margin: 50px 20px; 
 }
 nav ul li a{
     text-decoration: none;
@@ -97,18 +96,27 @@ nav ul li a{
 #menubtn{
     width: 50px;
     height: 50px;
-    background: #009688 transparent;
+    background: #009688;
     text-align: center;
     position: fixed;
-    right: 0%;
-    top: 5%; 
+    right: 62px;
+    top: 20px; 
     border-radius: 3px;
     z-index: 3;
     cursor: pointer;
 }
 #menubtn img{
-    width: 29px;
-    margin-top: 10px;
+    width: 25px;
+    margin-top: 15px;
+}
+@media screen and(max-width:770px) {
+    .banner-text h1{
+        font-size: 44px;
+    }
+    .banner-btn a{
+        display: block;
+        margin: 20px auto;
+    }
 }
 
   /* features */
@@ -131,7 +139,7 @@ nav ul li a{
     display: inline-block;
 }
 .title-text p::after{
-    content: "";
+    content: '';
     width: 50px;
     height: 35px;
     background: linear-gradient(#019587,#fff);
@@ -180,12 +188,26 @@ nav ul li a{
 .feature-text{
     font-size: 100%;
 }
+@media screen and(max-width:770px) {
+    .title-text h1{
+        font-size: 35px;
+    } 
+    .features{
+        flex-basis: 100%;
+    } 
+    .features-img{
+        flex-basis: 100%;
+    } 
+    .features-img img{
+        width: 100%;
+    }
+}
 
 /* service */
 
 #service{
     width: 100%;
-    padding: 70px;
+    padding: 70px 0;
     background: #efefef;
 }
 .service-box{
@@ -228,7 +250,7 @@ nav ul li a{
     bottom: 0%;
     left: 50%;
     opacity: 0;
-    transform: translatex(-50%);
+    transform: translateX(-50%);
     transition: 1s;
 }
 hr{
@@ -261,7 +283,7 @@ hr{
         margin: 5px auto;
     }
     .single-service:hover .service-desc{
-        bottom: 25%;
+        bottom: 25% !important;
     }
 }
 
@@ -271,22 +293,45 @@ hr{
     padding: 4%;
 }
 .testcommand-row{
+    width: 80%;
+    margin: auto;
     display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
     background-color: #e9e5e5;
 }
 .testcommand-col{
-    margin-block-start: 4em;
-    margin-block-end: 2em;
-    margin-inline-start: 1em;
-    margin-inline-end: 2em;
+    flex-basis: 28%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 3px #00968814;
+    cursor: pointer;
+   
 }
-.testcommand-col img{
+/* .testcommand-col img{
     border-radius: 50%;
-}
+} */
 .testcommand-col p{
-    padding: 2%;
+    padding: 8.5px;
 }
+.user{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.user img{
+    width: 40%;
+    margin-right: 20px;
+    border-radius: 3px;
+}
+.user-info .fa{
+     margin-left: 10px;
+     color: #27c0ff;
+     font-size: 20px;
 
+}
 
 
 
