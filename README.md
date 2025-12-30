@@ -1,20 +1,13 @@
 ## Hi 👋🏻, I'm Kratika Patel
-**A passionate fontend developer 
-Email Me **
+**A Passionate Fontend Developer 
+Email Me 👉 ✉️ **kratipatel09@gmail.com** For Collaboration/Project or Anything Else. 😊😊
 
-<!--
-**studytutorial09/studytutorial09** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
--->
-- 🔭 I’m currently working on value wiz-your smart price finder
-- 🌱 I’m currently learning React js
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+- 🔭 **I’m currently working on:** Value Wiz- Your Smart Price Finder
+- 🌱 **I’m currently learning:** Enter your tech here
+- 🤔 **I’m looking for help with:**Value wiz
+- 💬 **Ask me about:** Collaboration, Tech Support
+- 📫 **How to reach me:** kratipatel09@gmail.com
+- ⚡ **Fun fact:** I Love Tech and Tech Love Me
 
 
 ## 🌐 Socials:
