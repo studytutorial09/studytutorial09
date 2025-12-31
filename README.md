@@ -3,11 +3,11 @@
 Email Me 👉 ✉️ **kratipatel09@gmail.com** For Collaboration/Project or Anything Else. 😊😊
 
 - 🔭 **I’m currently working on:** Value Wiz- Your Smart Price Finder
-- 🌱 **I’m currently learning:** Enter your tech here
-- 🤔 **I’m looking for help with:**Value wiz
+- 🌱 **I’m currently learning:** React js
+- 🤔 **I’m looking for help with:** Value wiz
 - 💬 **Ask me about:** Collaboration, Tech Support
 - 📫 **How to reach me:** kratipatel09@gmail.com
-- ⚡ **Fun fact:** I Love Tech and Tech Love Me
+- ⚡ **Fun fact:** 🚀 I push bugs to GitHub so I can fix them later.
 
 
 ## 🌐 Socials:
